@@ -1,0 +1,23 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IdentityRole
+@{
+    ViewData["Title"] = "เพิ่มสิทธิ์ใหม่";
+}
+
+<h1 class="alert alert-success">เพิ่มสิทธิ์ใหม่ (Role)</h1>
+<form asp-controller="Role" asp-action="Create">
+    <div class="text-danger" asp-validation-summary="All"></div>
+    <div class="container">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" />
+                <span class="text-danger" asp-validation-for="Name"></span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">บันทึก</button>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,92 @@
+﻿@model WebboardMVC.Models.ApplicationUser
+@{
+    ViewData["Title"] = "Edit Data Member";
+}
+<h4 class="alert alert-primary">Edit Data Member</h4>
+<hr />
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            @if (string.IsNullOrEmpty(Model.ImageUrl))
+            {
+                <img class="img" src="@Url.Content("~/wwwroot/images/nopic.png")" width="140" height="180" alt="Profile Picture" />
+            }
+            else
+            {
+                <img class="img" src="@Url.Content("~/wwwroot/images/" + Model.ImageUrl)" width="140" height="180" alt="Profile Picture" onerror="this.onerror=null; this.src='~/wwwroot/images/nopic.png';" />
+            }
+        </div>
+
+
+        <div class="col-md-8">
+            <form asp-action="Edit" enctype="multipart/form-data" id="editForm">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+
+                <div class="form-group">
+                    <label asp-for="ImageUrl">Upload File:</label>
+                    <input asp-for="ImageUrl" type="file" name="files" class="form-control" />
+                    <span asp-validation-for="ImageUrl" class="text-danger" id="imageError" style="display:none;">Please add a picture</span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="FullName" class="control-label">Name</label>
+                    <input asp-for="FullName" class="form-control" id="fullNameInput" />
+                    <span asp-validation-for="FullName" class="text-danger" id="fullNameError" style="display:none;">Please add a name</span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Address" class="control-label">Address</label>
+                    <textarea asp-for="Address" rows="3" class="form-control" id="addressInput"></textarea>
+                    <span asp-validation-for="Address" class="text-danger" id="addressError" style="display:none;">Please add an address</span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="BirthDate" class="control-label">Birthday</label>
+                    <input type="date" asp-for="BirthDate" class="form-control" id="birthDateInput" />
+                    <span asp-validation-for="BirthDate" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="PhoneNumber" class="control-label">Phone Number</label>
+                    <input asp-for="PhoneNumber" class="form-control" />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" id="submitButton" disabled />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Set default value for birthday to today
+        var today = new Date().toISOString().split('T')[0];
+        document.getElementById('birthDateInput').value = today;
+
+        // Get DOM elements
+        var fullNameInput = document.getElementById('fullNameInput');
+        var addressInput = document.getElementById('addressInput');
+        var submitButton = document.getElementById('submitButton');
+        var fullNameError = document.getElementById('fullNameError');
+        var addressError = document.getElementById('addressError');
+
+        // Function to toggle the submit button state
+        function toggleSubmitButton() {
+            var isFullNameValid = fullNameInput.value.trim() !== "";
+            var isAddressValid = addressInput.value.trim() !== "";
+
+            submitButton.disabled = !isFullNameValid || !isAddressValid;
+
+            fullNameError.style.display = isFullNameValid ? 'none' : 'block';
+            addressError.style.display = isAddressValid ? 'none' : 'block';
+        }
+
+        // Event listeners for input fields
+        fullNameInput.addEventListener('input', toggleSubmitButton);
+        addressInput.addEventListener('input', toggleSubmitButton);
+    });
+</script>

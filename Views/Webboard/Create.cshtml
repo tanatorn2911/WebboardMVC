@@ -1,0 +1,41 @@
+﻿@model Kratoo
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container my-5">
+    <h2 class="mb-4">Create a New Post</h2>
+    <hr />
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Create" class="card p-4 shadow-sm">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="KratooTopic" class="control-label"></label>
+                    <input asp-for="KratooTopic" class="form-control" placeholder="Enter post topic" />
+                    <span asp-validation-for="KratooTopic" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="KratooDetails" class="control-label"></label>
+                    <textarea asp-for="KratooDetails" class="form-control" rows="5" placeholder="Enter post details"></textarea>
+                    <span asp-validation-for="KratooDetails" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="CategoryId" class="control-label"></label>
+                    <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoriesLists">
+                        <option value="">Select a Category</option>
+                    </select>
+                    <span asp-validation-for="CategoryId" class="text-danger"></span>
+                </div>
+
+                <hr />
+                <div class="form-group">
+                    <input type="submit" value="Post" class="btn btn-primary btn-block" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

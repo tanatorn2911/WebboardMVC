@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/adminlte/plugins/fontawesome-free/css/all.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/adminlte/dist/css/adminlte.min.css">
+
+    <!-- DataTables -->
+    <link rel="stylesheet" href="~/adminlte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/adminlte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/adminlte/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/adminlte/plugins/datatables-select/css/select.bootstrap4.min.css">
+
+    <!-- sweet alert2 -->
+    <link rel="stylesheet" href="~/adminlte/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+
+    <!-- select2-->
+    <link rel="stylesheet" href="~/adminlte/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/adminlte/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- daterangepicker-->
+    <link rel="stylesheet" href="~/adminlte/plugins/daterangepicker/daterangepicker.css">
+    <!-- datepicker-->
+    <link rel="stylesheet" href="~/adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+
+    <link rel="stylesheet" href="~/css/w3.css" />
+
+    <link rel="stylesheet" href="~/css/site.css?v=1.2" asp-append-version="true" />
+   
+</head>
+<body class="hold-transition sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+
+
+        <partial name="_NavbarPartial" />
+        <partial name="_SidebarPartial" />
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <div class="mx-4">
+                @RenderBody()
+            </div>
+        </div>
+        <!-- /.content-wrapper -->
+
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+    <!-- jQuery -->
+    <script src="~/adminlte/plugins/jquery/jquery.min.js"></script>
+    <script src="~/adminlte/plugins/inputmask/jquery.inputmask.min.js"></script>
+    <script src="~/adminlte/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="~/lib/jquery-serialzejson/jquery.serializejson.min.js"></script>
+
+    <!-- Bootstrap 4 -->
+    <script src="~/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- DataTables  & Plugins -->
+    <script src="~/adminlte/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/adminlte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/adminlte/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/adminlte/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="~/adminlte/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/adminlte/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="~/adminlte/plugins/jszip/jszip.min.js"></script>
+    <script src="~/adminlte/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="~/adminlte/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="~/adminlte/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="~/adminlte/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="~/adminlte/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+    <script src="~/adminlte/plugins/datatables-select/js/dataTables.select.min.js"></script>
+    <script src="~/adminlte/plugins/datatables-select/js/select.bootstrap4.min.js"></script>
+
+    <!-- AdminLTE App -->
+    <script src="~/adminlte/dist/js/adminlte.min.js"></script>
+
+    <!-- Sweet Alert 2 -->
+    <script src="~/adminlte/plugins/sweetalert2/sweetalert2.all.min.js"></script>
+
+
+    <!--Select 2 -->
+    <script src="~/adminlte/plugins/select2/js/select2.full.min.js"></script>
+
+
+    <!--Date fns -->
+    <script src="~/lib/date-fns/date_fns.min.js"></script>
+
+    <!-- moment -->
+    <script src="~/adminlte/plugins/moment/moment.min.js"></script>
+
+    <!-- daterangepicker -->
+    <script src="~/adminlte/plugins/daterangepicker/daterangepicker.js"></script>
+
+    <!-- datepicker -->
+    <script src="~/adminlte/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- validation -->
+    <script src="~/adminlte/plugins/jquery-validation/jquery.validate.min.js"></script>
+
+
+    @*<script src="~/adminlte/plugins/chart.js/Chart.js"></script>*@
+
+    <script src="~/js/site.js?v=1.2" asp-append-version="true"></script>
+    @*<script src="~/js/budgetadjust.js" asp-append-version="true"></script>*@
+
+    <!--AspNetCoreHero.ToastNotification -->
+  @*   @await Component.InvokeAsync("Notyf") *@
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

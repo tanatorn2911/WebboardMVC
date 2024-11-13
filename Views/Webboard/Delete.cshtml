@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Kratoo>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    @await Html.PartialAsync("_kratooSearch")
+    <table class="table table-responsive table-striped">
+        <br />
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <h4><a asp-controller="Webboard" asp-action="DeletekratooComments" asp-route-id="@item.Kid">@item.KratooTopic</a></h4>
+                        <div>
+                            ผู้เขียนกระทู้: @item.UserName
+                            (@item.UserIp)
+                            วันที่ตั้งกระทู้: @item.RecordDate?.ToString("dd/MM/yyyy HH:mm")
+                        </div>
+                    </td>
+                        <td>
+                        <div>
+                            อ่าน: @item.ViewCount
+                            ตอบ: @item.ReplyCount
+                        </div>
+                    </td>
+                    <td>
+                        <a asp-controller="Webboard"
+                           asp-action="kratoosByCategoryId"
+                           asp-route-id="@item.Category.CategoryId">
+                            @item.Category.CategoryName
+                        </a>
+                    </td>
+
+                    <td>
+                        <form asp-action="DeleteConfirmed" method="post">
+                            <input type="hidden" name="id" value="@item.Kid" />
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('คุณแน่ใจหรือไม่ว่าต้องการลบรายการนี้?');">ลบ</button>
+                        </form>
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</div>

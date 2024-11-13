@@ -1,0 +1,128 @@
+﻿@model MainIndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<br />
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-3">
+        @foreach (var item in Model.Categorylist)
+        {
+            <div class="col-md-4">
+                <div class="card border-secondary h-80">
+                    <!-- ตรวจสอบว่าหมวดหมู่นี้เป็นหมวดหมู่ที่มีโพสต์มากที่สุดหรือไม่ -->
+                    @if (item.CategoryId == Model.MostPopularCategoryId)
+                    {
+                        <div class="ribbon-wrapper">
+                            <div class="ribbon bg-danger text-white">HOT</div>
+                        </div>
+                    }
+
+                    <div class="card-body d-flex">
+                        <div class="row flex-grow-1 w-100">
+                            <div class="col-2 me-2">
+                                @if (item.CategoryId == 1)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/asp.net.png")" alt="Category Icon" />
+                                }
+                                else if (item.CategoryId == 2)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/node.png")" alt="Category Icon" />
+                                }
+                                else if (item.CategoryId == 3)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/angular.png")" alt="Category Icon" />
+                                }
+                                else if (item.CategoryId == 4)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/react.png")" alt="Category Icon" />
+                                }
+                                else if (item.CategoryId == 5)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/html.png")" alt="Category Icon" />
+                                }
+                                else if (item.CategoryId == 6)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/Blazor.png")" alt="Category Icon" />
+                                }
+                                else if (item.CategoryId == 7)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/api.png")" alt="Category Icon" />
+                                }
+                                else if (item.CategoryId == 8)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/Android.png")" alt="Category Icon" />
+                                }
+                                else if (item.CategoryId == 9)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/swift.png")" alt="Category Icon" />
+                                }
+                                else if (item.CategoryId == 10)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/flutter.png")" alt="Category Icon" />
+                                }
+                                else if (item.CategoryId == 11)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/lowcode.png")" alt="Category Icon" />
+                                }
+                            </div>
+                            <div class="col-10">
+                                <h5 class="card-title">
+                                    <button class="btn btn-link p-0"
+                                            onclick="location.href='@Url.Action("kratoosByCategoryId", "Webboard", new { id = item.CategoryId })'">
+                                        @item.CategoryName
+                                    </button>
+                                </h5>
+                                <p class="card-text">@item.Description</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+<hr />
+    <div class="container">
+        <h3 class="text-start mb-4 border rounded d-inline-block px-3 py-1 bg-white">
+    Latest 10 posts
+</h3>
+        <div class="table-responsive shadow-sm">
+            <table class="table table-hover table-bordered align-middle bg-light rounded">
+                <thead class="table-light">
+                    <tr>
+                        <th>Topic</th>
+                        <th class="text-center">Statistic</th>
+                        <th class="text-center">Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.KratooList)
+                    {
+                        <tr>
+                            <td>
+                                <h5 class="mb-2">
+                                    <a asp-controller="Webboard" asp-action="kratooComments" asp-route-id="@item.Kid" class="text-decoration-none text-dark">
+                                        @item.KratooTopic
+                                    </a>
+                                </h5>
+                                <div class="text-muted small">
+                                    Owner: @item.UserName || Date: @item.RecordDate?.ToString("dd/MM/yyyy HH:mm")
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div>
+                                    <span class="badge bg-primary p-2">Read: @item.ViewCount</span>
+                                    <span class="badge bg-success p-2">Comment: @item.ReplyCount</span>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <a asp-controller="Webboard" asp-action="kratoosByCategoryId" asp-route-id="@item.CategoryId" class="btn btn-outline-info btn-sm">
+                                    @item.Category.CategoryName
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>

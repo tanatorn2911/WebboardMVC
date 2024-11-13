@@ -1,0 +1,46 @@
+﻿@model WebboardMVC.Models.db.Kratoo
+
+@{
+    ViewData["Title"] = "Edit Kratoo";
+}
+<div class="container">
+    <h2>Edit Post</h2>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Edit" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="KratooTopic" class="control-label"></label>
+                    <input asp-for="KratooTopic" class="form-control" />
+                    <span asp-validation-for="KratooTopic" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="KratooDetails" class="control-label"></label>
+                    <textarea asp-for="KratooDetails" class="form-control"></textarea>
+                    <span asp-validation-for="KratooDetails" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CategoryId" class="control-label"></label>
+                    <select asp-for="CategoryId" class="form-control"
+                            asp-items="ViewBag.CategoriesLists">
+                    </select>
+                    <span asp-validation-for="CategoryId" class="text-danger"></span>
+                </div>
+
+                <input type="hidden" asp-for="Kid" />
+                <input type="hidden" asp-for="UserName" />
+
+                <hr />
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+                </div>
+            </form> 
+        </div>
+    </div>
+</div>

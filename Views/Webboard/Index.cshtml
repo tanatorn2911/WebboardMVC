@@ -1,0 +1,156 @@
+﻿@model IEnumerable<Kratoo>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<br />
+<div class="container">
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h4>Webboard Posts</h4>
+        </div>
+        <div class="card-body">
+            <table class="table table-responsive table-striped">
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="col-2">
+                                
+                                @if (item.CategoryId == 1)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/asp.net.png")" alt="Category Icon" style="width: 80px; height: 80px;" />
+                                }
+                                else if (item.CategoryId == 2)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/node.png")" alt="Category Icon" style="width: 80px; height: 80px;" />
+                                }
+                                else if (item.CategoryId == 3)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/angular.png")" alt="Category Icon" style="width: 80px; height: 80px;" />
+                                }
+                                else if (item.CategoryId == 4)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/react.png")" alt="Category Icon" style="width: 80px; height: 80px;" />
+                                }
+                                else if (item.CategoryId == 5)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/html.png")" alt="Category Icon" style="width: 80px; height: 80px;" />
+                                }
+                                else if (item.CategoryId == 6)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/Blazor.png")" alt="Category Icon" style="width: 80px; height: 80px;" />
+                                }
+                                else if (item.CategoryId == 7)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/api.png")" alt="Category Icon" style="width: 80px; height: 80px;" />
+                                }
+                                else if (item.CategoryId == 8)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/Android.png")" alt="Category Icon" style="width: 80px; height: 80px;" />
+                                }
+                                else if (item.CategoryId == 9)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/swift.png")" alt="Category Icon" style="width: 80px; height: 80px;" />
+                                }
+                                else if (item.CategoryId == 10)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/flutter.png")" alt="Category Icon" style="width: 80px; height: 80px;" />
+                                }
+                                else if (item.CategoryId == 11)
+                                {
+                                    <img class="img-fluid" src="@Url.Content("~/wwwroot/images/lowcode.png")" alt="Category Icon" style="width: 80px; height: 80px;" />
+                                }
+                            </td>
+                            <td class ="col-5">
+
+                                <h5>
+                                    <a asp-controller="Webboard" asp-action="kratooComments" asp-route-id="@item.Kid">
+                                        @item.KratooTopic
+                                    </a>
+                                </h5>
+                                <div>
+                                    Owner: @item.UserName ||
+                                    Date: @item.RecordDate?.ToString("dd/MM/yyyy HH:mm")
+                                </div>
+                            </td>
+
+                            <td class="col-2">
+                                <div>
+                                    <span class="badge bg-primary p-2">Read: @item.ViewCount</span>
+                                    <span class="badge bg-success p-2">Comment: @item.ReplyCount</span>
+                                </div>
+                            </td>
+
+                            <td class="col-2">
+                                <a asp-controller="Webboard"
+                                   asp-action="kratoosByCategoryId"
+                                   asp-route-id="@item.Category.CategoryId">
+                                    @item.Category.CategoryName
+                                </a>
+                            </td>
+
+                            @if (User.Identity.Name == item.UserName || User.IsInRole("Admin"))
+                            {
+                                <td class="col-1">
+                                    <a asp-action="Edit" asp-route-id="@item.Kid" class="btn btn-warning">Edit</a>
+                                </td>
+                            }
+                            else
+                            {
+                                <td class="col-1"></td>
+                            }
+
+                            @if (User.IsInRole("Admin") || User.IsInRole("Staff") || User.Identity.Name == item.UserName)
+                            {
+                                <td class="col-1" >
+                                    <form asp-action="DeleteConfirmed" method="post" class="delete-form" style="display:inline;">
+                                        <input type="hidden" name="id" value="@item.Kid" />
+                                        <button type="button" class="btn btn-danger btndeletepost">Delete</button>
+                                    </form>
+                                </td>
+                            }
+                            else
+                            {
+                                <td class="col-1"></td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        console.log("Document is ready");
+
+        // Handle delete button click
+        $(document).on('click', '.btndeletepost', function () {
+            const button = $(this);
+            confirmDelete(button);
+        });
+    });
+
+    function confirmDelete(button) {
+        const form = button.closest('form'); // Find the closest form
+        Swal.fire({
+            title: 'Confirm Delete?',
+            text: 'Are you sure delelete post?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Delete',
+            cancelButtonText: 'Cancel'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                form.submit();
+            }
+        });
+    }
+</script>

@@ -1,0 +1,81 @@
+﻿@model Comment
+<div class="container">
+
+
+    <div class="card border-dark mt-3 mb-3">
+        <div class="card-header text-light bg-dark">
+            <h4 class="card-title">
+                @ViewBag.KratooCommentViewModel.Kratoo.KratooTopic
+            </h4>
+        </div>
+        <div class="card-footer">
+            <div>
+                รายละเอียด:@ViewBag.KratooCommentViewModel.Kratoo.KratooDetails <br />
+                ผู้ตั้งกระทู้ : @ViewBag.KratooCommentViewModel.Kratoo.UserName<br />
+                @*  (หมายเลข IP : @ViewBag.KratooCommentViewModel.Kratoo.UserIp)  *@
+                วันที่ตั้งกระทู้ : @ViewBag.KratooCommentViewModel.Kratoo.RecordDate?.ToString("dd/MM/yyyy HH:mm")<br />
+                <div class="float-right">
+                    หมวด : @ViewBag.KratooCommentViewModel.Kratoo.Category.CategoryName |
+                    อ่าน : @ViewBag.KratooCommentViewModel.Kratoo.ViewCount |
+                    ตอบ : @ViewBag.KratooCommentViewModel.Kratoo.ReplyCount
+                </div>
+            </div>
+        </div>
+    </div>
+    @foreach (var item in ViewBag.KratooCommentViewModel.CommentList)
+    {
+        <div class="card border-dark mb-3">
+            <div class="card-body">
+                <p class="card-text">
+                    ความเห็นที่ @item.CommentNo
+                </p>
+                <form asp-action="DeleteComment" method="post">
+                    <input type="hidden" name="commentId" value="@item.CommentNo" />
+                    <input type="hidden" name="kid" value="@item.Kid" />
+                    <button type="submit" class="btn btn-danger" onclick="return confirm('คุณแน่ใจหรือไม่ว่าต้องการลบรายการนี้?');">ลบ</button>
+                </form>
+
+                <hr />
+                <p class="card-text">
+                    @item.Description
+                </p>
+            </div>
+            <div class="card-footer">
+                <div>
+                    ผู้ตั้งกระทู้ : @item.UserName
+                    (หมายเลข IP : @item.UserIp) |
+                    วันที่ตั้งกระทู้ : @item.ReplyDate?.ToString("dd/MM/yyyy HH:mm")
+                </div>
+            </div>
+        </div>
+    }
+    <div class="alert alert-primary">
+        <h4>ตอบกระทู้</h4>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-controller="Webboard" asp-action="kratooComments" class="needs-validation">
+                <input type="hidden" asp-for="@Model.Kid"
+                       value="@ViewBag.KratooCommentViewModel.Kratoo.Kid" />
+
+                <div class="form-group">
+                    <label asp-for="@Model.Description" class="control-label">Comment</label>
+                    <textarea asp-for="@Model.Description" rows="5" class="form-control"
+                              autocomplete="off" maxlength="255" required>
+                </textarea>
+                </div>
+
+                @*  <div class="form-group">
+                <label asp-for="@Model.UserName" class="control-label"></label>
+                <input asp-for="@Model.UserName" class="form-control"
+                autocomplete="off" maxlength="50" required />
+                </div> *@
+
+                <div class="form-group mt-2">
+                    <input type="submit" value="ตอบกระทู้" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

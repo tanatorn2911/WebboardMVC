@@ -1,0 +1,54 @@
+﻿@model WebboardMVC.ViewModels.RemoveRoleFromUserViewModel
+@{
+    ViewData["Title"] = "ลบ Role";
+}
+<div class="container">
+    <h2 class="alert alert-danger">ลบรายการสิทธิ์ของคุณ : @Model.Email</h2>
+    <form asp-controller="Admin" asp-action="RemoveRoleFromUser" class="remove-role-form">
+        <input asp-for="UserId" type="hidden" />
+
+        <h2>สิทธิ์ที่มีอยู่ :</h2>
+        @{
+            string[] userRole = Model.Roles.Split(',');
+        }
+
+        <select id="roleSelect" class="form-select">
+            @foreach (var item in userRole)
+            {
+                <option value="@item">@item</option>
+            }
+        </select>
+        <br />
+        <input type="button" value="ลบรายการสิทธิ์" class="btn btn-danger" onclick="confirmDelete(this)" />
+    </form>
+
+    <script>
+        function confirmDelete(button) {
+            const form = button.closest('.remove-role-form');
+            const selectedRole = document.getElementById('roleSelect').value;
+
+            Swal.fire({
+                title: 'ยืนยันการลบ?',
+                text: `คุณแน่ใจหรือไม่ว่าต้องการลบสิทธิ์: ${selectedRole}?`,
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'ลบ',
+                cancelButtonText: 'ยกเลิก'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // เพิ่ม hidden input สำหรับ role ที่จะถูกลบ
+                    const inputRole = document.createElement('input');
+                    inputRole.type = 'hidden';
+                    inputRole.name = 'role'; // ส่ง role ที่เลือกไปกับฟอร์ม
+                    inputRole.value = selectedRole;
+                    form.appendChild(inputRole);
+
+                    form.submit();
+                }
+            });
+        }
+    </script>
+
+</div>

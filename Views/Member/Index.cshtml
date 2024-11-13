@@ -1,0 +1,88 @@
+﻿@model WebboardMVC.Models.ApplicationUser
+@{
+    ViewData["Title"] = "User Profile";
+}
+
+<section style="background-color: #f8f9fa;">
+  <div class="container py-5">
+    <h1 class="alert alert-info text-center">User Profile</h1>
+    
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card mb-4">
+          <div class="card-body text-center">
+            @if (string.IsNullOrEmpty(Model.ImageUrl))
+            {
+                            <img class="rounded-circle img-fluid" src="@Url.Content("~/wwwroot/images/nopic.png")" width="140" height="180">
+            }
+            else
+            {
+                            <img class="rounded-circle img-fluid" src="@Url.Content("~/wwwroot/images/" + Model.ImageUrl)" width="140" height="180">
+            }
+            <h5 class="my-3">@Model.FullName</h5>
+            <p class="text-muted mb-1">Full Stack Developer</p>
+            <p class="text-muted mb-4">@Model.Address</p>
+            <div class="d-flex justify-content-center mb-2">
+                            <a class="btn btn-warning" asp-controller="Member" asp-action="Edit" asp-route-id="@Model.Id">
+                                Edit
+                            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8">
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Full Name</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">@Model.FullName</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Email</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">@Model.Email</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Phone</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">@Model.PhoneNumber</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Address</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">@Model.Address</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Birth Date</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">@Model.BirthDate.ToString("d MMMM yyyy")</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
