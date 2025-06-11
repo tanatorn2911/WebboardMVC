@@ -12,10 +12,10 @@ namespace WebboardMVC.Controllers
     public class MemberController : Controller
     {
         private readonly AppDbContext _applicationDbContext;
-        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly UserManager<AppUser> _userManager;
 
         public MemberController(AppDbContext applicationDbContext,
-            UserManager<ApplicationUser> userManager)
+            UserManager<AppUser> userManager)
         {
             _applicationDbContext = applicationDbContext;
             _userManager = userManager;
@@ -27,7 +27,7 @@ namespace WebboardMVC.Controllers
             if (User.Identity.IsAuthenticated) 
             {
                 var userId = _userManager.GetUserId(HttpContext.User);
-                ApplicationUser user = _userManager.FindByIdAsync(userId).Result;
+                AppUser user = _userManager.FindByIdAsync(userId).Result;
                 if (user == null)
                 {
                     return NotFound();
@@ -43,7 +43,7 @@ namespace WebboardMVC.Controllers
         }
         public IActionResult Edit(string id) {
             var userId= _userManager.GetUserId(HttpContext.User);
-            ApplicationUser user =_userManager.FindByIdAsync(userId).Result;
+            AppUser user =_userManager.FindByIdAsync(userId).Result;
             if (user == null) { 
             return NotFound();
             }
@@ -51,7 +51,7 @@ namespace WebboardMVC.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, ApplicationUser data, IFormFile files)
+        public async Task<IActionResult> Edit(string id, AppUser data, IFormFile files)
         {
             if (id != data.Id)
             {
@@ -60,9 +60,9 @@ namespace WebboardMVC.Controllers
 
             if (ModelState.IsValid)
             {
-                var userStore = new UserStore<ApplicationUser>(_applicationDbContext);
+                var userStore = new UserStore<AppUser>(_applicationDbContext);
                 var userId = _userManager.GetUserId(HttpContext.User);
-                ApplicationUser user = _userManager.FindByIdAsync(userId).Result;
+                AppUser user = _userManager.FindByIdAsync(userId).Result;
 
                 if (user != null)
                 {

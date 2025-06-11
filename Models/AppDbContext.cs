@@ -16,6 +16,7 @@ namespace WebboardMVC.Models
         {
         }
 
+        public virtual DbSet<AppUser> AppUsers { get; set; } = null!;
         public virtual DbSet<Category> Categories { get; set; } = null!;
         public virtual DbSet<Comment> Comments { get; set; } = null!;
         public virtual DbSet<Kratoo> Kratoos { get; set; } = null!;
@@ -31,6 +32,15 @@ namespace WebboardMVC.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<AppUser>(entity =>
+            {
+                entity.HasKey(e => e.ApplicationUserId);
+
+                entity.ToTable("AppUser");
+
+                entity.Property(e => e.ApplicationUserId).ValueGeneratedNever();
+            });
+
             modelBuilder.Entity<Category>(entity =>
             {
                 entity.ToTable("Category");

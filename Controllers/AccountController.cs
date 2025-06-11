@@ -7,13 +7,13 @@ namespace WebboardMVC.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly UserManager<AppUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManage;
-        private readonly SignInManager<ApplicationUser> _signInManage;
+        private readonly SignInManager<AppUser> _signInManage;
 
-        public AccountController(UserManager<ApplicationUser> userManager,
+        public AccountController(UserManager<AppUser> userManager,
                                  RoleManager<IdentityRole>roleManager,
-                                 SignInManager<ApplicationUser>signInManager
+                                 SignInManager<AppUser> signInManager
                                  ) 
         {
             _userManager = userManager;
@@ -28,7 +28,7 @@ namespace WebboardMVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(RegisterViewModel data)
         {
-            ApplicationUser user = new ApplicationUser();
+            AppUser user = new AppUser();
             user.UserName = data.Email;
             user.Email = data.Email;
 
