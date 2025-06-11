@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.FileProviders;
 using WebboardMVC.Models;
-using WebboardMVC.Models.db;
 
 namespace WebboardMVC.Controllers
 {

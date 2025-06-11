@@ -70,8 +70,8 @@
                                     </a>
                                 </h5>
                                 <div>
-                                    Owner: @item.UserName ||
-                                    Date: @item.RecordDate?.ToString("dd/MM/yyyy HH:mm")
+                                    Owner: @item.Username ||
+                                    Date: @item.RecordDate
                                 </div>
                             </td>
 
@@ -85,12 +85,12 @@
                             <td class="col-2">
                                 <a asp-controller="Webboard"
                                    asp-action="kratoosByCategoryId"
-                                   asp-route-id="@item.Category.CategoryId">
-                                    @item.Category.CategoryName
+                                   asp-route-id="@item.CategoryId">
+                                    @item.KratooTopic
                                 </a>
                             </td>
 
-                            @if (User.Identity.Name == item.UserName || User.IsInRole("Admin"))
+                            @if (User.Identity.Name == item.Username || User.IsInRole("Admin"))
                             {
                                 <td class="col-1">
                                     <a asp-action="Edit" asp-route-id="@item.Kid" class="btn btn-warning">Edit</a>
@@ -101,7 +101,7 @@
                                 <td class="col-1"></td>
                             }
 
-                            @if (User.IsInRole("Admin") || User.IsInRole("Staff") || User.Identity.Name == item.UserName)
+                            @if (User.IsInRole("Admin") || User.IsInRole("Staff") || User.Identity.Name == item.Username)
                             {
                                 <td class="col-1" >
                                     <form asp-action="DeleteConfirmed" method="post" class="delete-form" style="display:inline;">

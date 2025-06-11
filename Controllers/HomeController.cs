@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using WebboardMVC.Models;
-using WebboardMVC.Models.db;
 using WebboardMVC.ViewModels;
 
 namespace WebboardMVC.Controllers
@@ -18,26 +17,33 @@ namespace WebboardMVC.Controllers
 
         public IActionResult Index()
         {
-            // นับจำนวนโพสต์ในแต่ละหมวดหมู่
-            var categoryWithPostCounts = _db.Categories
-                .Select(c => new
-                {
-                    Category = c,
-                    PostCount = _db.Kratoos.Select(k => k.IsShow == "true").ToList().Count() // นับจำนวนกระทู้ที่แสดงอยู่ในแต่ละหมวดหมู่
-                }).ToList();
+            var categoryWithPostCounts = _db.Kratoos
+     .Where(k => k.CategoryId != null)
+     .GroupBy(k => k.CategoryId)
+     .Select(g => new
+     {
+         CategoryId = g.Key,
+         PostCount = g.Count()
+     })
+     .ToList();
 
             // หาหมวดหมู่ที่มีโพสต์มากที่สุด
-            var mostPopularCategory = categoryWithPostCounts.OrderByDescending(c => c.PostCount).FirstOrDefault();
+            var mostPopularCategory = categoryWithPostCounts
+                .OrderByDescending(c => c.PostCount)
+                .FirstOrDefault();
 
+            // สร้าง ViewModel
             var viewmodel = new MainIndexViewModel()
             {
-                Categorylist = _db.Categories.Select(k=>k.CategoryId).ToList(),
+                Categorylist = _db.Categories.Where(k => k.CategoryId != null).ToList(),
+
                 KratooList = _db.Kratoos
+                    .Where(i => i.IsShow == "true")
                     .OrderByDescending(r => r.RecordDate)
                     .Take(10)
-                    .Include(c => c.Category)
-                    .Where(i => i.IsShow == true),
-                MostPopularCategoryId = mostPopularCategory?.Category.CategoryId // เก็บ ID ของหมวดหมู่ที่มีโพสต์มากที่สุด
+                    .ToList(),
+
+                MostPopularCategoryId = Convert.ToInt32(mostPopularCategory?.CategoryId ?? 0) 
             };
 
             return View(viewmodel);

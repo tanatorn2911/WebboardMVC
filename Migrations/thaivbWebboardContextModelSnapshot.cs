@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WebboardMVC.Models.db;
+using WebboardMVC.Models;
 
 #nullable disable
 
@@ -249,7 +249,7 @@ namespace WebboardMVC.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("WebboardMVC.Models.db.Category", b =>
+            modelBuilder.Entity("WebboardMVC.Models.Category", b =>
                 {
                     b.Property<int>("CategoryId")
                         .ValueGeneratedOnAdd()
@@ -271,7 +271,7 @@ namespace WebboardMVC.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("WebboardMVC.Models.db.Comment", b =>
+            modelBuilder.Entity("WebboardMVC.Models.Comment", b =>
                 {
                     b.Property<int>("Kid")
                         .HasColumnType("int")
@@ -308,7 +308,7 @@ namespace WebboardMVC.Migrations
                     b.ToTable("Comments");
                 });
 
-            modelBuilder.Entity("WebboardMVC.Models.db.Kratoo", b =>
+            modelBuilder.Entity("WebboardMVC.Models.Kratoo", b =>
                 {
                     b.Property<int>("Kid")
                         .ValueGeneratedOnAdd()
@@ -411,9 +411,9 @@ namespace WebboardMVC.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("WebboardMVC.Models.db.Comment", b =>
+            modelBuilder.Entity("WebboardMVC.Models.Comment", b =>
                 {
-                    b.HasOne("WebboardMVC.Models.db.Kratoo", "KidNavigation")
+                    b.HasOne("WebboardMVC.Models.Kratoo", "KidNavigation")
                         .WithMany("Comments")
                         .HasForeignKey("Kid")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -422,9 +422,9 @@ namespace WebboardMVC.Migrations
                     b.Navigation("KidNavigation");
                 });
 
-            modelBuilder.Entity("WebboardMVC.Models.db.Kratoo", b =>
+            modelBuilder.Entity("WebboardMVC.Models.Kratoo", b =>
                 {
-                    b.HasOne("WebboardMVC.Models.db.Category", "Category")
+                    b.HasOne("WebboardMVC.Models.Category", "Category")
                         .WithMany("Kratoos")
                         .HasForeignKey("CategoryId")
                         .IsRequired()
@@ -433,12 +433,12 @@ namespace WebboardMVC.Migrations
                     b.Navigation("Category");
                 });
 
-            modelBuilder.Entity("WebboardMVC.Models.db.Category", b =>
+            modelBuilder.Entity("WebboardMVC.Models.Category", b =>
                 {
                     b.Navigation("Kratoos");
                 });
 
-            modelBuilder.Entity("WebboardMVC.Models.db.Kratoo", b =>
+            modelBuilder.Entity("WebboardMVC.Models.Kratoo", b =>
                 {
                     b.Navigation("Comments");
                 });

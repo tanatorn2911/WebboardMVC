@@ -14,9 +14,9 @@
                     <td>
                         <h4><a asp-controller="Webboard" asp-action="DeletekratooComments" asp-route-id="@item.Kid">@item.KratooTopic</a></h4>
                         <div>
-                            ผู้เขียนกระทู้: @item.UserName
+                            ผู้เขียนกระทู้: @item.Username
                             (@item.UserIp)
-                            วันที่ตั้งกระทู้: @item.RecordDate?.ToString("dd/MM/yyyy HH:mm")
+                            วันที่ตั้งกระทู้: @item.RecordDate
                         </div>
                     </td>
                         <td>
@@ -28,8 +28,8 @@
                     <td>
                         <a asp-controller="Webboard"
                            asp-action="kratoosByCategoryId"
-                           asp-route-id="@item.Category.CategoryId">
-                            @item.Category.CategoryName
+                           asp-route-id="@item.CategoryId">
+                            @item.KratooTopic
                         </a>
                     </td>
 

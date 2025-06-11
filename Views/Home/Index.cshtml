@@ -106,7 +106,7 @@
                                     </a>
                                 </h5>
                                 <div class="text-muted small">
-                                    Owner: @item.UserName || Date: @item.RecordDate?.ToString("dd/MM/yyyy HH:mm")
+                                    Owner: @item.Username || Date: @item.RecordDate
                                 </div>
                             </td>
                             <td class="text-center">
@@ -117,7 +117,7 @@
                             </td>
                             <td class="text-center">
                                 <a asp-controller="Webboard" asp-action="kratoosByCategoryId" asp-route-id="@item.CategoryId" class="btn btn-outline-info btn-sm">
-                                    @item.Category.CategoryName
+                                    @item.KratooTopic
                                 </a>
                             </td>
                         </tr>

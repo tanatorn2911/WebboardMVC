@@ -1,4 +1,4 @@
-﻿using WebboardMVC.Models.db;
+﻿using WebboardMVC.Models;
 
 namespace WebboardMVC.ViewModels
 {
