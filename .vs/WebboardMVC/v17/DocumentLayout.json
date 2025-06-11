@@ -1,102 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\",
+  "WorkspaceRootPath": "D:\\project\\WebboardMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\models\\db\\kratoo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:models\\db\\kratoo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\models\\db\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:models\\db\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\models\\db\\thaivbwebboardcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:models\\db\\thaivbwebboardcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|d:\\project\\webboardmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|d:\\project\\webboardmvc\\models\\db\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:models\\db\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|d:\\project\\webboardmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|d:\\project\\webboardmvc\\models\\db\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:models\\db\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|d:\\project\\webboardmvc\\models\\db\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:models\\db\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|d:\\project\\webboardmvc\\models\\db\\kratoo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:models\\db\\kratoo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|d:\\project\\webboardmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\controllers\\webboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|d:\\project\\webboardmvc\\my_db.db||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:my_db.db||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|d:\\project\\webboardmvc\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|d:\\project\\webboardmvc\\migrations\\thaivbwebboardcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:migrations\\thaivbwebboardcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|d:\\project\\webboardmvc\\migrations\\20240922090145_addfristrole.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:migrations\\20240922090145_addfristrole.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|d:\\project\\webboardmvc\\migrations\\20240922085324_firstsetup.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:migrations\\20240922085324_firstsetup.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|d:\\project\\webboardmvc\\controllers\\webboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:controllers\\webboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\views\\shared\\_navbarpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:views\\shared\\_navbarpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|d:\\project\\webboardmvc\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\views\\shared\\_kratoosearch.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:views\\shared\\_kratoosearch.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\views\\shared\\_sidebarpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:views\\shared\\_sidebarpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\views\\member\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:views\\member\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\views\\member\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:views\\member\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\views\\webboard\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:views\\webboard\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\views\\webboard\\kratoocomments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:views\\webboard\\kratoocomments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\webboardmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:webboardmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\views\\account\\confirmemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:views\\account\\confirmemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\wwwroot\\js\\webboardindex.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:wwwroot\\js\\webboardindex.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\wwwroot\\js\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:wwwroot\\js\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|c:\\users\\tanatorn\\source\\repos\\webboardmvc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|d:\\project\\webboardmvc\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E5F30B-58B8-4036-92BE-BA2D85A9010F}|WebboardMVC.csproj|solutionrelative:controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,295 +78,198 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Models\\db\\Category.cs",
-              "RelativeDocumentMoniker": "Models\\db\\Category.cs",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Models\\db\\Category.cs",
-              "RelativeToolTip": "Models\\db\\Category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T04:07:30.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Kratoo.cs",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Models\\db\\Kratoo.cs",
-              "RelativeDocumentMoniker": "Models\\db\\Kratoo.cs",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Models\\db\\Kratoo.cs",
-              "RelativeToolTip": "Models\\db\\Kratoo.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAIwCUAAAAAAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\project\\WebboardMVC\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\project\\WebboardMVC\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T04:07:02.405Z",
+              "WhenOpened": "2025-06-11T13:47:32.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "thaivbWebboardContext.cs",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Models\\db\\thaivbWebboardContext.cs",
-              "RelativeDocumentMoniker": "Models\\db\\thaivbWebboardContext.cs",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Models\\db\\thaivbWebboardContext.cs",
-              "RelativeToolTip": "Models\\db\\thaivbWebboardContext.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "DocumentIndex": 7,
+              "Title": "my_db.db",
+              "DocumentMoniker": "D:\\project\\WebboardMVC\\my_db.db",
+              "RelativeDocumentMoniker": "my_db.db",
+              "ToolTip": "D:\\project\\WebboardMVC\\my_db.db",
+              "RelativeToolTip": "my_db.db",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMTSURBVDhPRVNLTxNRFP7uTKl90Ae0UFARTAVEjEjwGTRRgpSF7HShJv4AV\u002B78D25duHZljHHnwteGGOtbROITKrYUbZXax3Q67xnPvcQwybk5d\u002BZ83/nOY1ixpMEwLKT7o1gtKNsc140xxno9z9tOFrRtq03XjZqha6uKolRCwVBt8vhe5/bdh7hwbsZj33IbGEonkcs3JglwFcA0WZyIYFkmDF2HTqZpGre8prXuO459/cL5TIHiwPixmq8EXc\u002B36AGDrufCNE0B4mAO5P7/u\u002B1YYAw3L1\u002Bcu8KxEj9Kv4pRzdCjtmNDVVUoDYWsjka9DkVpoNlsEIEG27UhyxK6u3pipFYkFwSy3OZRJk9i4koPaSFxPh9DMLANnYkkJApvqZy4gVJ5nQduEUgUKUnkkjbXcaipBmVtolqtUwk6XmSfovJ3g0hkUP2IRmMcvEVQXFtj5V8/mWnqIGn8FVxqYqulIpudx8DuNFKp7fhLJMViAeFwO/5sNEScYMmvN1ILC\u002B8XtZaakiQZvJGtloalD\u002B8QCAQos4Qmyff7/Rgbm0B3KnVnZurwJRq3IxSUSj9Z364BjE8cwY6dfYjHO/HmdVbIpbFBNzRw4pnMHI4eO4EE9WQ5951DN0uwbdszDd0jRoRCYbx6\u002BQynpzIYGton7olECrOzc\u002Bjt3UGlOTANE8l4aIsg4A84K8tf8fnjErLP5mHRHqwX86jVq6LeoeERWLaFXO4rPn1aQr7ww\u002BtI9IhmbSqg5RgZPYBkdw\u002B\u002BfP6IcHuE5m4gHAwimeyC2lS4SnR0JDAwkMbg4LBbr\u002BUFgY8fmtp0oh1hr1L5jczsWcQpsFqtCqAs\u002B9AeidDoIohEYggGA/St4sTio1sKTk2fVh88uG/Xa1Wk9wxTwyRhtBy0Gkw0sK3NL/xlKvXevbtNxkwO3Rwjf8YPnRzv7u250ZXsmuzf1Y9Ie1TsBAfxsVYqGyisUV9qtVsrK7lrq98WyxwnCA4dm8abF0\u002B4i/0HTyQtx8jQpo/SRscpgP4elOGxhfpv\u002BVGp/NzhcRPHz\u002BDt88f4Bw8ol4Ht69ueAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-06-11T13:47:33.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\project\\WebboardMVC\\Models\\db\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\db\\AppDbContext.cs",
+              "ToolTip": "D:\\project\\WebboardMVC\\Models\\db\\AppDbContext.cs",
+              "RelativeToolTip": "Models\\db\\AppDbContext.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T04:06:49.634Z",
+              "WhenOpened": "2025-06-11T13:47:17.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Kratoo.cs",
+              "DocumentMoniker": "D:\\project\\WebboardMVC\\Models\\db\\Kratoo.cs",
+              "RelativeDocumentMoniker": "Models\\db\\Kratoo.cs",
+              "ToolTip": "D:\\project\\WebboardMVC\\Models\\db\\Kratoo.cs",
+              "RelativeToolTip": "Models\\db\\Kratoo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T13:47:13.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "D:\\project\\WebboardMVC\\Models\\db\\Comment.cs",
+              "RelativeDocumentMoniker": "Models\\db\\Comment.cs",
+              "ToolTip": "D:\\project\\WebboardMVC\\Models\\db\\Comment.cs",
+              "RelativeToolTip": "Models\\db\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T13:47:10.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAIAAAAZAAAA",
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\project\\WebboardMVC\\Models\\db\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\db\\Category.cs",
+              "ToolTip": "D:\\project\\WebboardMVC\\Models\\db\\Category.cs",
+              "RelativeToolTip": "Models\\db\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T05:42:28.716Z",
+              "WhenOpened": "2025-06-11T13:47:06.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\project\\WebboardMVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\project\\WebboardMVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T12:00:46.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\project\\WebboardMVC\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\project\\WebboardMVC\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-11T13:47:39.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20240922090145_AddFristRole.Designer.cs",
+              "DocumentMoniker": "D:\\project\\WebboardMVC\\Migrations\\20240922090145_AddFristRole.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240922090145_AddFristRole.Designer.cs",
+              "ToolTip": "D:\\project\\WebboardMVC\\Migrations\\20240922090145_AddFristRole.Designer.cs",
+              "RelativeToolTip": "Migrations\\20240922090145_AddFristRole.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T13:45:00.595Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-15T09:19:25.712Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_NavbarPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Shared\\_NavbarPartial.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_NavbarPartial.cshtml",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Shared\\_NavbarPartial.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_NavbarPartial.cshtml",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAowAYAAABSAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-29T14:53:17.202Z"
+              "Title": "MemberController.cs",
+              "DocumentMoniker": "D:\\project\\WebboardMVC\\Controllers\\MemberController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MemberController.cs",
+              "ToolTip": "D:\\project\\WebboardMVC\\Controllers\\MemberController.cs",
+              "RelativeToolTip": "Controllers\\MemberController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAEwBgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T13:43:12.864Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "_kratooSearch.cshtml",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Shared\\_kratooSearch.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_kratooSearch.cshtml",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Shared\\_kratooSearch.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_kratooSearch.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-29T14:53:00.522Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAdAAAA",
+              "Title": "20240922085324_FirstSetup.Designer.cs",
+              "DocumentMoniker": "D:\\project\\WebboardMVC\\Migrations\\20240922085324_FirstSetup.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240922085324_FirstSetup.Designer.cs",
+              "ToolTip": "D:\\project\\WebboardMVC\\Migrations\\20240922085324_FirstSetup.Designer.cs",
+              "RelativeToolTip": "Migrations\\20240922085324_FirstSetup.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T13:42:06.277Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T13:10:34.704Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T07:25:18.715Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAADwvx4AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:19:55.27Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "_SidebarPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Shared\\_SidebarPartial.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_SidebarPartial.cshtml",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Shared\\_SidebarPartial.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_SidebarPartial.cshtml",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAqwEcAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-29T14:48:41.993Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Member\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Member\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Member\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Member\\Edit.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAowBIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-29T14:44:57.069Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Member\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Member\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Member\\Index.cshtml",
-              "RelativeToolTip": "Views\\Member\\Index.cshtml",
-              "ViewState": "AQIAABAAAAAAAAAAAAAowBMAAACTAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-29T14:31:47.675Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Webboard\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Webboard\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Webboard\\Create.cshtml",
-              "RelativeToolTip": "Views\\Webboard\\Create.cshtml",
-              "ViewState": "AQIAACYAAAAAAAAAAAAowCkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-29T14:29:58.464Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "KratooComments.cshtml",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Webboard\\KratooComments.cshtml",
-              "RelativeDocumentMoniker": "Views\\Webboard\\KratooComments.cshtml",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Webboard\\KratooComments.cshtml",
-              "RelativeToolTip": "Views\\Webboard\\KratooComments.cshtml",
-              "ViewState": "AQIAABoAAAAAAAAAAAAowB0AAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-29T14:18:06.948Z"
+              "WhenOpened": "2025-06-11T13:44:46.067Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "thaivbWebboardContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\project\\WebboardMVC\\Migrations\\thaivbWebboardContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\thaivbWebboardContextModelSnapshot.cs",
+              "ToolTip": "D:\\project\\WebboardMVC\\Migrations\\thaivbWebboardContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\thaivbWebboardContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T13:45:19.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "WebboardController.cs",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Controllers\\WebboardController.cs",
+              "DocumentMoniker": "D:\\project\\WebboardMVC\\Controllers\\WebboardController.cs",
               "RelativeDocumentMoniker": "Controllers\\WebboardController.cs",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Controllers\\WebboardController.cs",
+              "ToolTip": "D:\\project\\WebboardMVC\\Controllers\\WebboardController.cs",
               "RelativeToolTip": "Controllers\\WebboardController.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAA/wBoAAAAuAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T09:22:27.573Z"
+              "WhenOpened": "2025-06-11T13:44:20.478Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ConfirmEmail.cshtml",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Account\\ConfirmEmail.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\ConfirmEmail.cshtml",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Account\\ConfirmEmail.cshtml",
-              "RelativeToolTip": "Views\\Account\\ConfirmEmail.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-29T14:06:31.437Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "WebboardMVC.csproj",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\WebboardMVC.csproj",
-              "RelativeDocumentMoniker": "WebboardMVC.csproj",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\WebboardMVC.csproj",
-              "RelativeToolTip": "WebboardMVC.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-29T13:57:26.903Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Account\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Account\\Index.cshtml",
-              "RelativeToolTip": "Views\\Account\\Index.cshtml",
-              "ViewState": "AQIAABkAAAAAAAAAAAAuwCsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-29T13:22:50.721Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\ViewModels\\RegisterViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\RegisterViewModel.cs",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\ViewModels\\RegisterViewModel.cs",
-              "RelativeToolTip": "ViewModels\\RegisterViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 13,
+              "Title": "StaffController.cs",
+              "DocumentMoniker": "D:\\project\\WebboardMVC\\Controllers\\StaffController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StaffController.cs",
+              "ToolTip": "D:\\project\\WebboardMVC\\Controllers\\StaffController.cs",
+              "RelativeToolTip": "Controllers\\StaffController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T13:22:46.982Z"
+              "WhenOpened": "2025-06-11T13:43:57.092Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Register.js",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\wwwroot\\js\\Register.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\Register.js",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\wwwroot\\js\\Register.js",
-              "RelativeToolTip": "wwwroot\\js\\Register.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-29T13:19:10.241Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "webboardIndex.js",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\wwwroot\\js\\webboardIndex.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\webboardIndex.js",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\wwwroot\\js\\webboardIndex.js",
-              "RelativeToolTip": "wwwroot\\js\\webboardIndex.js",
-              "ViewState": "AQIAABUAAAAAAAAAAAAkwCQAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-29T12:49:29.062Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Tanatorn\\source\\repos\\WebboardMVC\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAACAAAAAAAAAAAAAqwCkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-29T12:49:20.059Z"
+              "DocumentIndex": 14,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "D:\\project\\WebboardMVC\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoleController.cs",
+              "ToolTip": "D:\\project\\WebboardMVC\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "Controllers\\RoleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T13:43:53.697Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -12,10 +12,10 @@ namespace WebboardMVC.Controllers
     [Authorize(Roles = "Member,Admin")]
     public class MemberController : Controller
     {
-        private readonly thaivbWebboardContext _applicationDbContext;
+        private readonly AppDbContext _applicationDbContext;
         private readonly UserManager<ApplicationUser> _userManager;
 
-        public MemberController(thaivbWebboardContext applicationDbContext,
+        public MemberController(AppDbContext applicationDbContext,
             UserManager<ApplicationUser> userManager)
         {
             _applicationDbContext = applicationDbContext;

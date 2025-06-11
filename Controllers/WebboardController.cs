@@ -11,9 +11,9 @@ namespace WebboardMVC.Controllers
     [Authorize(Roles ="Admin,Staff,Member")]
     public class WebboardController : Controller
     {
-        private readonly thaivbWebboardContext _db;
+        private readonly AppDbContext _db;
 
-        public WebboardController(thaivbWebboardContext db)
+        public WebboardController(AppDbContext db)
         {
             _db = db;
         }

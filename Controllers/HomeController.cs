@@ -9,9 +9,9 @@ namespace WebboardMVC.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly thaivbWebboardContext _db;
+        private readonly AppDbContext _db;
 
-        public HomeController(thaivbWebboardContext db)
+        public HomeController(AppDbContext db)
         {
             _db = db;
         }

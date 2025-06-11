@@ -10,7 +10,7 @@ using WebboardMVC.Models.db;
 
 namespace WebboardMVC.Migrations
 {
-    [DbContext(typeof(thaivbWebboardContext))]
+    [DbContext(typeof(AppDbContext))]
     partial class thaivbWebboardContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

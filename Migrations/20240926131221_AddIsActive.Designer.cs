@@ -11,7 +11,7 @@ using WebboardMVC.Models.db;
 
 namespace WebboardMVC.Migrations
 {
-    [DbContext(typeof(thaivbWebboardContext))]
+    [DbContext(typeof(AppDbContext))]
     [Migration("20240926131221_AddIsActive")]
     partial class AddIsActive
     {
