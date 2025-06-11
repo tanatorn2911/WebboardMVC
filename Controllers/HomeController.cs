@@ -23,7 +23,7 @@ namespace WebboardMVC.Controllers
                 .Select(c => new
                 {
                     Category = c,
-                    PostCount = c.Kratoos.Count(k => k.IsShow == true) // นับจำนวนกระทู้ที่แสดงอยู่ในแต่ละหมวดหมู่
+                    PostCount = _db.Kratoos.Select(k => k.IsShow == "true").ToList().Count() // นับจำนวนกระทู้ที่แสดงอยู่ในแต่ละหมวดหมู่
                 }).ToList();
 
             // หาหมวดหมู่ที่มีโพสต์มากที่สุด
@@ -31,7 +31,7 @@ namespace WebboardMVC.Controllers
 
             var viewmodel = new MainIndexViewModel()
             {
-                Categorylist = _db.Categories.ToList(),
+                Categorylist = _db.Categories.Select(k=>k.CategoryId).ToList(),
                 KratooList = _db.Kratoos
                     .OrderByDescending(r => r.RecordDate)
                     .Take(10)

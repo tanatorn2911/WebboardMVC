@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebboardMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfcefdaa3b8e12fea285252e4c195710417ff0e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77cd706d26e848d6d0eab3b953f5139e2e52e1c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebboardMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebboardMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
